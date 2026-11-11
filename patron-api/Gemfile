@@ -6,6 +6,8 @@ gem "rails", "~> 8.0.0"
 gem "puma", ">= 6.4"
 gem "bootsnap", require: false
 gem "tzinfo-data"    # slim images ship without zoneinfo
+gem "minitest", "5.27.0"
+gem "irb", "1.18.0"
 
 # ENTRA MIGRATION (phase 1): both gems below are new.
 # Shared token toolkit (OBO, client credentials, token validation).

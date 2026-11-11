@@ -15,6 +15,13 @@ gem "json", "~> 2.7" # json 3.x drops the quirks_mode option ActiveSupport 8.0 p
 gem "omniauth", "~> 2.1"
 gem "omniauth-entra-id", "~> 3.0"
 gem "omniauth-rails_csrf_protection", "~> 1.0"
+gem "hashie", "5.2.0"
+gem "irb", "1.18.0"
+gem "minitest", "5.27.0"
+gem "oauth2", "2.1.0"
+gem "anonymous_loader", "0.1.5"
+gem "auth-sanitizer", "0.2.5"
+gem "snaky_hash", "2.0.9"
 
 # Shared token toolkit (refresh, claims challenge parsing).
 gem "entra_auth", path: "../gems/entra_auth"
