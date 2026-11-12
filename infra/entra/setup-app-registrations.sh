@@ -175,8 +175,8 @@ JOB_SECRET="$(new_secret "$JOB_APP_ID")"
 
 # Delegated permissions, tenant-wide: the portal -> Patron API, and the
 # Patron API -> Graph (which OBO needs; there is no interactive consent there).
-retry az ad app permission admin-consent --id "$PATRON_API_APP_ID" --only-show-errors
-retry az ad app permission admin-consent --id "$PORTAL_APP_ID" --only-show-errors
+# retry az ad app permission admin-consent --id "$PATRON_API_APP_ID" --only-show-errors
+# retry az ad app permission admin-consent --id "$PORTAL_APP_ID" --only-show-errors
 
 assign_app_role() { # principal-object-id app-role-id
   graph --method POST --uri "https://graph.microsoft.com/v1.0/servicePrincipals/$PATRON_API_SP/appRoleAssignedTo" \
